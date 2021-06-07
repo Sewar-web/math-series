@@ -20,8 +20,26 @@ def lucas(n):
     else:
         return lucas(n-1)+lucas(n-2)    
 
-print(lucas(0))        
+       
 print(lucas(1))        
 print(lucas(2))        
 print(lucas(3))        
-print(lucas(4))  
+ 
+
+
+def sum_series (n ,a=0 ,s=1):
+    if a==0 and s==1:
+        return fibonacci(n)
+    elif a==2 and s==1:
+        return lucas(n)
+    else:
+        return sum_series(n-1 ,a,s)+sum_series(n-2 ,a,s)
+
+print(sum_series(1))
+print(sum_series(2))
+print(sum_series(3))
+
+
+
+print(sum_series(0,2,1))
+print(sum_series(3,2,1))
