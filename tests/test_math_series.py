@@ -22,3 +22,18 @@ def test_four_it():
 
 def test_five_it():
     assert lucas(3)==4
+
+
+
+
+def test_six_it():
+       assert sum_series(0) == 0
+       assert sum_series(1) == 1
+
+
+def test_seven_it():
+    assert sum_series(0,2,1) == 2
+    assert sum_series(1,2,1) == 1
+    assert sum_series(3,2,1) == 4
+    assert sum_series(6,2,1) == 18 
+    
