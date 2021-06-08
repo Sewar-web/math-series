@@ -46,4 +46,5 @@ sum_series(3)
 
 
 sum_series(0,2,1)
+sum_series(1,2,1)
 sum_series(3,2,1)
