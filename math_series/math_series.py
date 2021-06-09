@@ -32,11 +32,13 @@ def sum_series (n ,a=0 ,s=1):
         return fibonacci(n)
     elif a==2 and s==1:
         return lucas(n)
+        
     else:
         if n==0:
-            return a
+            return sum_series(a)
         elif n==1:
-            return s
+            return sum_series(s) 
+   
 
 
 sum_series(1)
