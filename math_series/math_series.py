@@ -38,6 +38,8 @@ def sum_series (n ,a=0 ,s=1):
             return sum_series(a)
         elif n==1:
             return sum_series(s) 
+        else:
+             return sum_series(n-1,a,s) + sum_series(n-2,a,s)
    
 
 

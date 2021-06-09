@@ -38,5 +38,5 @@ def test_seven_it():
     assert sum_series(3,2,1) == 4
     
 def test_end_it():
-    assert sum_series(4,2,1) == 7 
-    assert sum_series(6,2,1) == 18 
+    assert sum_series(4,3,5) == 19 
+    assert sum_series(6,5,7) == 129 
